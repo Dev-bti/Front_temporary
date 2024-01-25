@@ -4,7 +4,7 @@ import StartPage from "../pages/StartPage/StartPage";
 import QuestionPage from "../pages/QuestionPage/QuestionPage";
 import ResultPage from "../pages/ResultPage/ResultPage";
 
-export default function AppRouter() {
+export default function Router() {
   return (
     <Routes>
       <Route path="/" exact element={<StartPage />} />
