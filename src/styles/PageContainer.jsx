@@ -8,5 +8,3 @@ export const PageContainer = styled.div`
   align-items: center;
   background-color: #252525;
 `;
-
-export default PageContainer;

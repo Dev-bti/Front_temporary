@@ -5,5 +5,3 @@ export const PageStyle = styled.div`
   height: 100%;
   background-color: white;
 `;
-
-export default PageStyle;
