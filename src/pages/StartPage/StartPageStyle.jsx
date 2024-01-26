@@ -8,6 +8,14 @@ export const Jaeseung = styled.img`
   width: 460px;
   height: 900px;
   filter: blur(3px);
+
+  @media (max-width: 400px) and (max-height: 700px) {
+    top: -35%;
+    left: -27%;
+    width: 400px;
+    height: 800px;
+    filter: blur(3px);
+  }
 `;
 
 export const Joohyun = styled.img`
@@ -17,6 +25,14 @@ export const Joohyun = styled.img`
   width: 450px;
   height: 500px;
   filter: blur(3px);
+
+  @media (max-width: 400px) and (max-height: 700px) {
+    top: 43%;
+    left: 25%;
+    width: 400px;
+    height: 500px;
+    filter: blur(3px);
+  }
 `;
 
 export const MainTitle = styled.div`
