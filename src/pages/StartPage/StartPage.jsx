@@ -1,23 +1,41 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import PageContainer from "../../styles/PageContainer";
-import ButtonStyle from "../../styles/ButtonStyle";
 import PageStyle from "../../styles/PageStyle";
+import {
+  Jaeseung,
+  Joohyun,
+  MainTitle,
+  Title,
+  TitleSpan,
+  Description,
+  Button,
+  StyledLink,
+} from "./StartPageStyle";
 
 export default function StartPage() {
+  const image = {
+    jaeseung: "src/assets/dev/dev_jaeseung.png",
+    joohyun: "src/assets/dev/dev_joohyun.png",
+  };
+
   return (
     <PageContainer>
       <PageStyle>
-        <div className="mainTitle"></div>
-        <p>나의 Dev-BTI</p>
-        <p>
-          프론트엔드 / 백엔드 / 풀스택
-          <br />
-          나는 어떤 개발자 유형일까?
-        </p>
-        <Link to="/questions">
-          <ButtonStyle>다음</ButtonStyle>
-        </Link>
+        <Jaeseung src={image.jaeseung} alt="Jaeseung"></Jaeseung>
+        <Joohyun src={image.joohyun} alt="Joohyun"></Joohyun>
+        <MainTitle>
+          <Title>
+            나의 <TitleSpan>Dev</TitleSpan>-BTI
+          </Title>
+          <Description>
+            프론트엔드 / 백엔드 / 풀스택
+            <br />
+            나는 어떤 개발자 유형일까?
+          </Description>
+        </MainTitle>
+        <StyledLink to="/questions">
+          <Button>알아보러 가기</Button>
+        </StyledLink>
       </PageStyle>
     </PageContainer>
   );
