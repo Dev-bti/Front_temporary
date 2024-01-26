@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const PageContainer = styled.div`
+const PageContainer = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
@@ -8,3 +8,5 @@ export const PageContainer = styled.div`
   align-items: center;
   background-color: #252525;
 `;
+
+export default PageContainer;
