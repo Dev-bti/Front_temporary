@@ -4,8 +4,13 @@ import PageContainer from "../../styles/PageContainer";
 import PageStyle from "../../styles/PageStyle";
 import ProgressIndex from "../../components/ProgressIndex";
 import ProgressBar from "../../components/ProgressBar";
+import Question from "../../components/Question";
 
 export default function QuestionPage() {
+  const [curQuestion, setCurQuestion] = useState({
+    text: "여기는 질문이 들어갈 영역입니다.여기는 질문이 들어갈 영역입니다.여기는 질문이 들어갈 영역입니다.",
+    img: "src/assets/question/question_calculator.png",
+  });
   const [curQuestionIndex, setCurQuestionIndex] = useState(1);
   const totalQuestions = 10;
 
@@ -35,7 +40,10 @@ export default function QuestionPage() {
           curIndex={curQuestionIndex}
           totalIndex={totalQuestions}
         />
-        <h1>여기는 질문 페이지입니다.</h1>
+        <Question
+          text={curQuestion.text}
+          img={curQuestion.img ? curQuestion.img : null}
+        />
         <Link to="/result">
           <button>다음</button>
         </Link>
