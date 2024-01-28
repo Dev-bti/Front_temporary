@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const PageStyle = styled.div`
   position: relative;
-  width: 32%;
+  width: 32vw;
   height: 100%;
   display: flex;
   flex-direction: column;
