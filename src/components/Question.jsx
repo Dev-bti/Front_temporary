@@ -29,6 +29,7 @@ const QuestionText = styled.div`
   height: 23%;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-top: 5px;
   text-align: center;
   line-height: 25px;
