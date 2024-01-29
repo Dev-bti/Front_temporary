@@ -1,6 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
+const questionImage = {
+  num6: "src/assets/question/question_login.png",
+  num9: "src/assets/question/question_calculator.png",
+};
+
 const QuestionContainer = styled.div`
   position: relative;
   width: 85%;
@@ -37,11 +42,14 @@ const BorderLine = styled.div`
   top: 96%;
 `;
 
-const Question = ({ text, img }) => {
+const Question = ({ questionNum, text }) => {
   return (
     <QuestionContainer>
-      {img && <QuestionImage src={img} />}
-      {/* <QuestionImage src={img} /> */}
+      {questionNum === 6 ? (
+        <QuestionImage src={questionImage.num6} />
+      ) : questionNum === 9 ? (
+        <QuestionImage src={questionImage.num9} />
+      ) : null}
       <QuestionText>{text}</QuestionText>
       <BorderLine />
     </QuestionContainer>

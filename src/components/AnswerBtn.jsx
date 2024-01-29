@@ -39,9 +39,8 @@ const AnswerList = styled.button`
 const AnswerBtn = ({ items }) => {
   return (
     <AnswerContainer>
-      {items.map((item) => (
-        <AnswerList>{item}</AnswerList>
-      ))}
+      {items &&
+        items.map((item) => <AnswerList>{item.answer_Sentence}</AnswerList>)}
     </AnswerContainer>
   );
 };
