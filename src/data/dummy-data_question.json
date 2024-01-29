@@ -1,0 +1,226 @@
+[
+  {
+    "question_ID": 1,
+    "answers": [
+      {
+        "answer_ID": 1,
+        "answer_Sentence": "친구 자취방의 분위기와 어울릴만한 감각적인 인테리어 소품",
+        "answer_Front": 10,
+        "answer_Back": 0,
+        "question_ID": 1
+      },
+      {
+        "answer_ID": 2,
+        "answer_Sentence": "자취에 필요할 만한 화장지나 수건 세트 같은 실용적인 물건",
+        "answer_Front": 0,
+        "answer_Back": 10,
+        "question_ID": 1
+      }
+    ],
+    "question_Sentence": "자취를 시작한 친구 집에 놀러 가기로 한 당신, 집들이 선물로 어떤 것을 사 가면 좋을까요?",
+    "question_Image": null
+  },
+  {
+    "question_ID": 2,
+    "answers": [
+      {
+        "answer_ID": 1,
+        "answer_Sentence": "무대에서 빛나는 보컬이나 화려한 기타리스트",
+        "answer_Front": 10,
+        "answer_Back": 0,
+        "question_ID": 2
+      },
+      {
+        "answer_ID": 2,
+        "answer_Sentence": "안정적이고 탄탄한 리듬을 구축하는 드러머나 베이시스트",
+        "answer_Front": 0,
+        "answer_Back": 10,
+        "question_ID": 2
+      }
+    ],
+    "question_Sentence": "만약 당신이 밴드부에 가입한다면, 어떤 역할을 맡게 될까요?",
+    "question_Image": null
+  },
+  {
+    "question_ID": 3,
+    "answers": [
+      {
+        "answer_ID": 1,
+        "answer_Sentence": "가장 중요한 건 신뢰성 있는 자료조사와 검증된 근거이므로 자료조사를 맡는다.",
+        "answer_Front": 0,
+        "answer_Back": 10,
+        "question_ID": 3
+      },
+      {
+        "answer_ID": 2,
+        "answer_Sentence": "보기 좋은 떡이 먹기도 좋기에 가독성 있고 깔끔하게 잘 정리된 PPT 제작을 맡는다.",
+        "answer_Front": 10,
+        "answer_Back": 0,
+        "question_ID": 3
+      },
+      {
+        "answer_ID": 3,
+        "answer_Sentence": "팀원들을 믿을 수 없기에 내가 자료조사와 PPT 제작, 발표를 모두 맡는다.",
+        "answer_Front": 5,
+        "answer_Back": 5,
+        "question_ID": 3
+      }
+    ],
+    "question_Sentence": "교양 수업에서 조별 프로젝트를 하게 된 당신, 어떤 역할을 맡을까요?",
+    "question_Image": null
+  },
+  {
+    "question_ID": 4,
+    "answers": [
+      {
+        "answer_ID": 1,
+        "answer_Sentence": "디자인을 하려니 막막하다. 역시 난 자료조사가 체질이라며 흰 배경에 검은 글씨를 넣어본다.",
+        "answer_Front": 0,
+        "answer_Back": 10,
+        "question_ID": 4
+      },
+      {
+        "answer_ID": 2,
+        "answer_Sentence": "내 실력을 발휘할 차례다. 어울리는 색상 조합부터 미세한 여백 조절까지 무엇 하나 포기할 수 없다.",
+        "answer_Front": 10,
+        "answer_Back": 0,
+        "question_ID": 4
+      }
+    ],
+    "question_Sentence": "팀 프로젝트에서 PPT 제작을 맡게 된 당신, 어떻게 만들면 좋을까요?",
+    "question_Image": null
+  },
+  {
+    "question_ID": 5,
+    "answers": [
+      {
+        "answer_ID": 1,
+        "answer_Sentence": "다른 사람의 눈을 사로잡는 화려하고 예쁜 웹 페이지",
+        "answer_Front": 10,
+        "answer_Back": 0,
+        "question_ID": 5
+      },
+      {
+        "answer_ID": 2,
+        "answer_Sentence": "다양한 기능이 들어가 있어 실용적인 웹 페이지",
+        "answer_Front": 0,
+        "answer_Back": 10,
+        "question_ID": 5
+      }
+    ],
+    "question_Sentence": "웹 페이지를 만들게 된다면 어떤 페이지를 만들어보고 싶으신가요?",
+    "question_Image": null
+  },
+  {
+    "question_ID": 6,
+    "answers": [
+      {
+        "answer_ID": 1,
+        "answer_Sentence": "어…? 뭐가 하나 빠진 거 같은데…?",
+        "answer_Front": 0,
+        "answer_Back": 10,
+        "question_ID": 6
+      },
+      {
+        "answer_ID": 2,
+        "answer_Sentence": "음… 너무 밋밋한 느낌인데…",
+        "answer_Front": 10,
+        "answer_Back": 0,
+        "question_ID": 6
+      },
+      {
+        "answer_ID": 3,
+        "answer_Sentence": "그냥 내가 하나 만들어야겠다~",
+        "answer_Front": 5,
+        "answer_Back": 5,
+        "question_ID": 6
+      }
+    ],
+    "question_Sentence": "프로젝트 진행 중 같은 팀원이 회원가입 창을 만들어 왔다. 이때 당신은 어떤 반응을 보일까요?",
+    "question_Image": "signup_Image"
+  },
+  {
+    "question_ID": 7,
+    "answers": [
+      {
+        "answer_ID": 1,
+        "answer_Sentence": "아름답고 화려한 행성이나 은하계를 탐험하며, 탐험 내용을 바탕으로 색다른 경험을 제공하는 우주 비행사",
+        "answer_Front": 10,
+        "answer_Back": 0,
+        "question_ID": 7
+      },
+      {
+        "answer_ID": 2,
+        "answer_Sentence": "복잡한 우주 시스템을 이해하고, 안정적인 여행이 될 수 있도록 우주선을 관리하는 우주 공학자",
+        "answer_Front": 0,
+        "answer_Back": 10,
+        "question_ID": 7
+      }
+    ],
+    "question_Sentence": "만약 우주 탐사 프로젝트에 투입되었다면 어떤 역할을 맡고 싶나요?",
+    "question_Image": null
+  },
+  {
+    "question_ID": 8,
+    "answers": [
+      {
+        "answer_ID": 1,
+        "answer_Sentence": "와… 디자인 진짜 예쁘게 나왔네! 색감 미쳤다!",
+        "answer_Front": 10,
+        "answer_Back": 0,
+        "question_ID": 8
+      },
+      {
+        "answer_ID": 2,
+        "answer_Sentence": "오… 이거 사양이 어떻게 돼?",
+        "answer_Front": 0,
+        "answer_Back": 10,
+        "question_ID": 8
+      }
+    ],
+    "question_Sentence": "친구가 신상 맥북을 샀다고 자랑을 한다. 이때 당신은 어떤 반응을 보일까요?",
+    "question_Image": null
+  },
+  {
+    "question_ID": 9,
+    "answers": [
+      {
+        "answer_ID": 1,
+        "answer_Sentence": "음… 어딘가 묘하게 킹 받는다…",
+        "answer_Front": 10,
+        "answer_Back": 0,
+        "question_ID": 9
+      },
+      {
+        "answer_ID": 2,
+        "answer_Sentence": "오! 다른 기능도 만들어서 넣어봐!",
+        "answer_Front": 0,
+        "answer_Back": 10,
+        "question_ID": 9
+      }
+    ],
+    "question_Sentence": "같이 공부를 하는 친구가 웹페이지에서 계산기를 만들었다고 보여줬다. 이때 당신은 어떤 반응을 보일까요?",
+    "question_Image": "calculator_Image"
+  },
+  {
+    "question_ID": 10,
+    "answers": [
+      {
+        "answer_ID": 1,
+        "answer_Sentence": "빠른 일 처리 속도를 위해 성능에 집중한다.",
+        "answer_Front": 0,
+        "answer_Back": 10,
+        "question_ID": 10
+      },
+      {
+        "answer_ID": 2,
+        "answer_Sentence": "사용자 친화적인 UI/UX 제공에 집중한다.",
+        "answer_Front": 10,
+        "answer_Back": 0,
+        "question_ID": 10
+      }
+    ],
+    "question_Sentence": "웹 프로젝트를 진행하게 된다면, 어떤 부분을 중점적으로 하고 싶으신가요?",
+    "question_Image": null
+  }
+]
