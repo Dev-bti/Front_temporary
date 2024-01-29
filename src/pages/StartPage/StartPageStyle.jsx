@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const Jaeseung = styled.img`
   position: absolute;
   top: -35%;
-  left: -27%;
+  left: -21%;
   width: 460px;
   height: 900px;
   filter: blur(3px);
@@ -21,7 +21,7 @@ export const Jaeseung = styled.img`
 export const Joohyun = styled.img`
   position: absolute;
   top: 50%;
-  left: 28%;
+  left: 23%;
   width: 450px;
   height: 500px;
   filter: blur(3px);
