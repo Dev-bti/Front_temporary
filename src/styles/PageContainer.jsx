@@ -6,7 +6,7 @@ const PageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #252525;
+  background-color: #f0f0f0;
 `;
 
 export default PageContainer;
