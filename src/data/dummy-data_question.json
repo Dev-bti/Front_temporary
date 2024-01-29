@@ -46,21 +46,21 @@
     "answers": [
       {
         "answer_ID": 1,
-        "answer_Sentence": "가장 중요한 건 신뢰성 있는 자료조사와 검증된 근거이므로 자료조사를 맡는다.",
+        "answer_Sentence": "자료조사는 내가 다 해올게!",
         "answer_Front": 0,
         "answer_Back": 10,
         "question_ID": 3
       },
       {
         "answer_ID": 2,
-        "answer_Sentence": "보기 좋은 떡이 먹기도 좋기에 가독성 있고 깔끔하게 잘 정리된 PPT 제작을 맡는다.",
+        "answer_Sentence": "깔끔하고 세련된 PPT는 나에게 맡겨!",
         "answer_Front": 10,
         "answer_Back": 0,
         "question_ID": 3
       },
       {
         "answer_ID": 3,
-        "answer_Sentence": "팀원들을 믿을 수 없기에 내가 자료조사와 PPT 제작, 발표를 모두 맡는다.",
+        "answer_Sentence": "아무도 믿지 못하니 그냥 내가 다 한다",
         "answer_Front": 5,
         "answer_Back": 5,
         "question_ID": 3
@@ -74,14 +74,14 @@
     "answers": [
       {
         "answer_ID": 1,
-        "answer_Sentence": "디자인을 하려니 막막하다. 역시 난 자료조사가 체질이라며 흰 배경에 검은 글씨를 넣어본다.",
+        "answer_Sentence": "일단 PPT에 조사한 자료를 넣어본다.",
         "answer_Front": 0,
         "answer_Back": 10,
         "question_ID": 4
       },
       {
         "answer_ID": 2,
-        "answer_Sentence": "내 실력을 발휘할 차례다. 어울리는 색상 조합부터 미세한 여백 조절까지 무엇 하나 포기할 수 없다.",
+        "answer_Sentence": "사소한 디테일 하나까지 신경써서 만든다.",
         "answer_Front": 10,
         "answer_Back": 0,
         "question_ID": 4
