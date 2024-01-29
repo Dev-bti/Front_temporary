@@ -144,20 +144,20 @@
     "answers": [
       {
         "answer_ID": 1,
-        "answer_Sentence": "아름답고 화려한 행성이나 은하계를 탐험하며, 탐험 내용을 바탕으로 색다른 경험을 제공하는 우주 비행사",
+        "answer_Sentence": "이건 못 참지. 바로 다운받아서 들어본다",
         "answer_Front": 10,
         "answer_Back": 0,
         "question_ID": 7
       },
       {
         "answer_ID": 2,
-        "answer_Sentence": "복잡한 우주 시스템을 이해하고, 안정적인 여행이 될 수 있도록 우주선을 관리하는 우주 공학자",
+        "answer_Sentence": "별로 관심이 끌리지 않는다. 그냥 내가 좋아하는 노래를 듣는다.",
         "answer_Front": 0,
         "answer_Back": 10,
         "question_ID": 7
       }
     ],
-    "question_Sentence": "만약 우주 탐사 프로젝트에 투입되었다면 어떤 역할을 맡고 싶나요?",
+    "question_Sentence": "유명 아티스트의 신곡이 나왔다! 이때 당신의 반응은?",
     "question_Image": null
   },
   {
