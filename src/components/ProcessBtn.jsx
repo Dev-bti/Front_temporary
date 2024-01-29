@@ -1,6 +1,4 @@
 import React from "react";
-import ProcessBtn from "../styles/ProcessBtnStyle";
+import styled from "styled-components";
 
-export default function ProcessBtn() {
-  return <div></div>;
-}
+const ButtonContainer = styled.div``;

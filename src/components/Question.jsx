@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const QuestionContainer = styled.div`
   position: relative;
-  width: 80%;
+  width: 85%;
   height: 38%;
   margin-top: 15px;
   display: flex;
