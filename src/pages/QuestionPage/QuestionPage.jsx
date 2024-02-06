@@ -13,6 +13,8 @@ export default function QuestionPage() {
   const [curQuestion, setCurQuestion] = useState(null);
   const [curQuestionIndex, setCurQuestionIndex] = useState(1);
   const totalQuestions = 10;
+  const [frontScore, setFrontScore] = useState(0);
+  const [backScore, setBackScore] = useState(0);
 
   const progress = (curQuestionIndex / totalQuestions) * 100;
 
