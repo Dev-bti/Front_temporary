@@ -42,6 +42,7 @@ const AnswerBtn = ({ items, onClickFunction }) => {
       {items &&
         items.map((item) => (
           <AnswerList
+            key={item.answer_ID}
             onClick={() => onClickFunction(item.answer_Front, item.answer_Back)}
           >
             {item.answer_Sentence}
