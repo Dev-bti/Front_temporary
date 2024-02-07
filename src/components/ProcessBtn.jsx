@@ -25,7 +25,7 @@ const Button = styled.button`
 `;
 
 const ProcessBtn = ({ questionID, onClickFunction }) => {
-  const [handleNextBtn, handlePrevBtn] = onClickFunction;
+  const [handleNextBtn, handlePrevBtn, handleResultRedirect] = onClickFunction;
   return (
     <ButtonContainer>
       {2 <= questionID && questionID <= 10 && (
@@ -35,7 +35,9 @@ const ProcessBtn = ({ questionID, onClickFunction }) => {
         <Button onClick={handleNextBtn}>다음 질문</Button>
       ) : (
         <Button>
-          <Link to="/result">결과 보기</Link>
+          <Link to="/result" onClick={handleResultRedirect}>
+            결과 보기
+          </Link>
         </Button>
       )}
     </ButtonContainer>

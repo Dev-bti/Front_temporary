@@ -36,11 +36,17 @@ const AnswerList = styled.button`
   }
 `;
 
-const AnswerBtn = ({ items }) => {
+const AnswerBtn = ({ items, onClickFunction }) => {
   return (
     <AnswerContainer>
       {items &&
-        items.map((item) => <AnswerList>{item.answer_Sentence}</AnswerList>)}
+        items.map((item) => (
+          <AnswerList
+            onClick={() => onClickFunction(item.answer_Front, item.answer_Back)}
+          >
+            {item.answer_Sentence}
+          </AnswerList>
+        ))}
     </AnswerContainer>
   );
 };
