@@ -8,7 +8,7 @@ const PageStyle = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: #f0f0f0;
-  overflow: hidden;
+  overflow: scroll;
 
   @media (max-width: 400px) and (max-height: 700px) {
     width: 100%;
