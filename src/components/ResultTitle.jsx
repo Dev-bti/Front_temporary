@@ -8,7 +8,7 @@ const TitleBox = styled.div`
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
-  margin-bottom: 55px;
+  margin-bottom: 20px;
 `;
 
 const TitleP = styled.p`
@@ -28,11 +28,11 @@ const TitleImg = styled.img`
   height: 260px;
 `;
 
-const ResultTitle = () => {
+const ResultTitle = ({ adjective, result, resultId }) => {
   return (
     <TitleBox>
       <TitleP>나의 개발자 유형은</TitleP>
-      <TitleH>감각적인 프론트엔드 개발자</TitleH>
+      <TitleH>{`${adjective} ${result}`}</TitleH>
       <TitleImg />
     </TitleBox>
   );
