@@ -10,7 +10,7 @@ import {
   Description,
   Button,
   StyledLink,
-} from "./StartPageStyle";
+} from "../../styles/StartPageStyle";
 
 export default function StartPage() {
   const image = {
