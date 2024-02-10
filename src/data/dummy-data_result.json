@@ -11,6 +11,11 @@
       "최신 트렌드나, 유행에 민감한 사람",
       "결과물이 바로바로 확인하는 것을 좋아하는 사람"
     ],
+    "dev_Lectures": [
+      "https://www.inflearn.com/course/1만시간-웹페이지-제작",
+      "https://www.inflearn.com/course/김영한의-자바-입문",
+      "https://www.inflearn.com/course/자바스크립트-es6-기초핵심"
+    ],
     "dev_Adjective": "감각적인",
     "dev_Type": "프론트엔드 개발자",
     "dev_Type_Code": 1
