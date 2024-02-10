@@ -29,11 +29,11 @@ export const Li = styled.li`
   margin-bottom: 25px;
   list-style-type: none;
   color: #464646;
-  background-color: white;
 `;
 
 export const Lang = styled.img`
-  width: 100%;
+  width: 100px;
+  height: 100px;
   margin-bottom: 10px;
   height: 90px;
 `;
