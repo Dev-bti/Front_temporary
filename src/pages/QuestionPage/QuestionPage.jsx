@@ -17,8 +17,24 @@ export default function QuestionPage() {
   const progress = (curQuestionIndex / totalQuestions) * 100;
   const navigate = useNavigate();
 
+  // useEffect(() => {
+  //   fetch("http://3.34.97.84:8080/question", { method: "GET" })
+  //     .then((res) => {
+  //       if (!res.ok) {
+  //         throw new Error(`HTTP error! Status: ${res.status}`);
+  //       }
+  //       return res.json();
+  //     })
+  //     .then((data) => {
+  //       setEntireQuestion(data);
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error fetching data : ", error);
+  //     });
+  // }, []);
+
   useEffect(() => {
-    fetch("http://3.34.97.84:8080/question", { method: "GET" })
+    fetch("src/data/dummy-data_question.json")
       .then((res) => {
         if (!res.ok) {
           throw new Error(`HTTP error! Status: ${res.status}`);
@@ -29,7 +45,7 @@ export default function QuestionPage() {
         setEntireQuestion(data);
       })
       .catch((error) => {
-        console.error("Error fetching data : ", error);
+        console.log("Error fetching data : ", error);
       });
   }, []);
 
