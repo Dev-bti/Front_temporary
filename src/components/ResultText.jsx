@@ -27,12 +27,33 @@ const LangContainer = styled.div`
   width: 30%;
   height: 100%;
 `;
-const Langs = () => {
+const LangDetail = ({ img }) => {
   return (
     <LangContainer>
-      <Lang />
-      <p>HTML</p>
+      <Lang src={img} />
     </LangContainer>
+  );
+};
+
+const Langs = ({ type }) => {
+  const firstLang =
+    type == 0 || type == 1
+      ? "src/assets/recolang/html.png"
+      : "src/assets/recolang/c.png";
+  const secondLang =
+    type == 0 || type == 2
+      ? "src/assets/recolang/java.png"
+      : "src/assets/recolang/css.png";
+  const thirdLang =
+    type == 0 || type == 1
+      ? "src/assets/recolang/javascript.png"
+      : "src/assets/recolang/python.png";
+  return (
+    <LangsContainer>
+      <LangDetail img={firstLang} />
+      <LangDetail img={secondLang} />
+      <LangDetail img={thirdLang} />
+    </LangsContainer>
   );
 };
 
@@ -71,43 +92,40 @@ const Lectures = () => {
   );
 };
 
-const ResultText = () => {
+const ResultText = ({ type, resultId, works, personalities, lecture }) => {
   return (
     <ResultContainer>
       <Border />
       <TitleText>
-        <Span>프론트엔드 개발자</Span>가 어울리는 당신은?
+        <Span>{type}</Span>가 어울리는 당신은?
       </TitleText>
       <Border />
       <Ul>
-        <Li>안녕???????안녕???????안녕???????안녕???????안녕???????</Li>
-        <Li>안녕???????</Li>
-        <Li>안녕???????</Li>
+        {works &&
+          works.map((work, index) => {
+            return <Li key={index}>{work}</Li>;
+          })}
       </Ul>
       <Border />
       <TitleText>
-        프론트엔드 개발자는 <Span>무슨 일</Span>을 할까?
+        {type}는 <Span>무슨 일</Span>을 할까?
       </TitleText>
       <Border />
       <Ul>
-        <Li>ㅏ어나ㅓㅏㅓ아러아러아</Li>
-        <Li>ㅏ어나ㅓㅏㅓ아러아러아</Li>
-        <Li>ㅏ어나ㅓㅏㅓ아러아러아</Li>
-        <Li>ㅏ어나ㅓㅏㅓ아러아러아</Li>
+        {personalities &&
+          personalities.map((personality, index) => {
+            return <Li key={index}>{personality}</Li>;
+          })}
       </Ul>
       <Border />
       <TitleText>
         <Span>어떤 언어</Span>를 공부해야 할까?
       </TitleText>
       <Border />
-      <LangsContainer>
-        <Langs />
-        <Langs />
-        <Langs />
-      </LangsContainer>
+      <Langs type={resultId} />
       <Border />
       <TitleText>
-        미래 프론트엔드 개발자를 위한 <Span>추천 강의</Span>
+        미래 {type}를 위한 <Span>추천 강의</Span>
       </TitleText>
       <Border />
       <LecturesContainer>
