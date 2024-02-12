@@ -29,11 +29,27 @@ const TitleImg = styled.img`
 `;
 
 const ResultTitle = ({ adjective, result, resultId }) => {
+  let imgPath = "";
+
+  switch (resultId) {
+    case 0:
+      imgPath = "src/assets/result/fullstack.png";
+      break;
+    case 1:
+      imgPath = "src/assets/result/frontend.png";
+      break;
+    case 2:
+      imgPath = "src/assets/result/backend.png";
+      break;
+    default:
+      imgPath = "";
+  }
+
   return (
     <TitleBox>
       <TitleP>나의 개발자 유형은</TitleP>
       <TitleH>{`${adjective} ${result}`}</TitleH>
-      <TitleImg />
+      <TitleImg src={imgPath} alt="Developer Type" />
     </TitleBox>
   );
 };

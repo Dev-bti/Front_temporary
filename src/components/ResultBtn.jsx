@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const ButtonContainer = styled.div`
   margin-bottom: 60px;
@@ -27,13 +28,45 @@ const Button = styled.button`
 `;
 
 const ResultBtn = () => {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://developers.kakao.com/sdk/js/kakao.js";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => document.body.removeChild(script);
+  }, []);
+
+  const shareToKakao = () => {
+    if (window.Kakao) {
+      const Kakao = window.Kakao;
+
+      if (!Kakao.isInitialized()) {
+        Kakao.init("8cb4794d2729368259e3759d07e2ee12");
+      }
+
+      Kakao.Link.sendDefault({
+        objectType: "feed",
+        content: {
+          title: "내 개발자 유형 알아보기!",
+          description: "결과 확인하러 가기",
+          imageUrl: "src/assets/dev/dev_joohyun.png",
+          link: {
+            mobileWebUrl: "http://localhost:5173",
+            webUrl: "http://localhost:5173",
+          },
+        },
+      });
+    }
+  };
   return (
-    <ButtonContainer>
-      <Button>
-        <Link to="/">테스트 다시하기</Link>
-      </Button>
-      <Button>결과 공유</Button>
-    </ButtonContainer>
+    <>
+      <ButtonContainer>
+        <Button>
+          <Link to="/">테스트 다시하기</Link>
+        </Button>
+        <Button onClick={shareToKakao}>결과 공유</Button>
+      </ButtonContainer>
+    </>
   );
 };
 

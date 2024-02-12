@@ -16,6 +16,24 @@ const ResultContainer = styled.div`
   text-align: center;
 `;
 
+const resultImg = {
+  fronts: [
+    "src/assets/lecture/lecture_1.png",
+    "src/assets/lecture/lecture_2.png",
+    "src/assets/lecture/lecture_3.png",
+  ],
+  backs: [
+    "src/assets/lecture/lecture_4.png",
+    "src/assets/lecture/lecture_5.png",
+    "src/assets/lecture/lecture_6.png",
+  ],
+  fulls: [
+    "src/assets/lecture/lecture_1.png",
+    "src/assets/lecture/lecture_6.png",
+    "src/assets/lecture/lecture_7.jpeg",
+  ],
+};
+
 const LangsContainer = styled.div`
   margin-top: 20px;
   margin-bottom: 60px;
@@ -34,7 +52,6 @@ const LangDetail = ({ img }) => {
     </LangContainer>
   );
 };
-
 const Langs = ({ type }) => {
   const firstLang =
     type == 0 || type == 1
@@ -81,18 +98,26 @@ const LectureBtn = styled.button`
   border: none;
   font-size: 13px;
   cursor: pointer;
-`;
+  transition: all 0.2s ease;
 
-const Lectures = () => {
+  &:hover {
+    background-color: #2d424e;
+    color: white;
+  }
+`;
+const Lectures = ({ address, lectureImg }) => {
+  const handleLecture = () => {
+    window.location.href = address;
+  };
   return (
     <LectureContainer>
-      <Lecture />
-      <LectureBtn>강의 바로가기</LectureBtn>
+      <Lecture src={lectureImg} />
+      <LectureBtn onClick={handleLecture}>강의 바로가기</LectureBtn>
     </LectureContainer>
   );
 };
 
-const ResultText = ({ type, resultId, works, personalities, lecture }) => {
+const ResultText = ({ type, resultId, works, personalities, lectures }) => {
   return (
     <ResultContainer>
       <Border />
@@ -129,9 +154,22 @@ const ResultText = ({ type, resultId, works, personalities, lecture }) => {
       </TitleText>
       <Border />
       <LecturesContainer>
-        <Lectures />
-        <Lectures />
-        <Lectures />
+        {lectures &&
+          lectures.map((lecture, index) => {
+            return (
+              <Lectures
+                address={lecture}
+                key={index}
+                lectureImg={
+                  resultId === 0
+                    ? resultImg.fulls[index]
+                    : resultId === 1
+                    ? resultImg.fronts[index]
+                    : resultImg.backs[index]
+                }
+              />
+            );
+          })}
       </LecturesContainer>
     </ResultContainer>
   );
