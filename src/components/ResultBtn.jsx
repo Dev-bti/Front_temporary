@@ -27,7 +27,7 @@ const Button = styled.button`
   }
 `;
 
-const ResultBtn = () => {
+const ResultBtn = ({ path }) => {
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://developers.kakao.com/sdk/js/kakao.js";
@@ -51,8 +51,8 @@ const ResultBtn = () => {
           description: "결과 확인하러 가기",
           imageUrl: "src/assets/dev/dev_joohyun.png",
           link: {
-            mobileWebUrl: "http://localhost:5173",
-            webUrl: "http://localhost:5173",
+            mobileWebUrl: "http://localhost:5173" + path,
+            webUrl: "http://localhost:5173" + path,
           },
         },
       });

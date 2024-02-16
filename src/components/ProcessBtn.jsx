@@ -34,11 +34,7 @@ const ProcessBtn = ({ questionID, onClickFunction }) => {
       {1 <= questionID && questionID <= 9 ? (
         <Button onClick={handleNextBtn}>다음 질문</Button>
       ) : (
-        <Button>
-          <Link to="/result" onClick={handleResultRedirect}>
-            결과 보기
-          </Link>
-        </Button>
+        <Button onClick={handleResultRedirect}>결과 보기</Button>
       )}
     </ButtonContainer>
   );
