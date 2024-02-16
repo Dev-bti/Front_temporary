@@ -45,7 +45,7 @@ export default function QuestionPage() {
   //       setEntireQuestion(data);
   //     })
   //     .catch((error) => {
-  //       console.log("Error fetching data : ", error);
+  //       console.log("Error fetching data: ", error);
   //     });
   // }, []);
 
