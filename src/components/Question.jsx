@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-const questionImage = {
-  num6: "src/assets/question/question_login.png",
-  num9: "src/assets/question/question_calculator.png",
+const QUESTION_IMAGE = {
+  signup_Image: "src/assets/question/question_login.png",
+  calculator_Image: "src/assets/question/question_calculator.png",
 };
 
 const QuestionContainer = styled.div`
@@ -43,15 +43,14 @@ const BorderLine = styled.div`
   top: 96%;
 `;
 
-const Question = ({ questionNum, text }) => {
+const Question = ({ question }) => {
+  const { question_Image, question_Sentence } = question;
+  const imgSrc = QUESTION_IMAGE[question_Image];
+
   return (
     <QuestionContainer>
-      {questionNum === 6 ? (
-        <QuestionImage src={questionImage.num6} />
-      ) : questionNum === 9 ? (
-        <QuestionImage src={questionImage.num9} />
-      ) : null}
-      <QuestionText>{text}</QuestionText>
+      {question_Image && <QuestionImage src={imgSrc} />}
+      <QuestionText>{question_Sentence}</QuestionText>
       <BorderLine />
     </QuestionContainer>
   );
