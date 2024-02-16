@@ -32,10 +32,10 @@ export default function StartPage() {
             <br />
             나는 어떤 개발자 유형일까?
           </Description>
+          <StyledLink to="/questions">
+            <Button>알아보러 가기</Button>
+          </StyledLink>
         </MainTitle>
-        <StyledLink to="/questions">
-          <Button>알아보러 가기</Button>
-        </StyledLink>
       </PageStyle>
     </PageContainer>
   );

@@ -7,6 +7,7 @@ const PageStyle = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: #f0f0f0;
   &::-webkit-scrollbar {
     display: none;
