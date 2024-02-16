@@ -10,11 +10,11 @@ import ProcessBtn from "../../components/ProcessBtn";
 
 export default function QuestionPage() {
   const [entireQuestion, setEntireQuestion] = useState([]);
-  const [curQuestion, setCurQuestion] = useState({});
   const [curQuestionIndex, setCurQuestionIndex] = useState(1);
   const totalQuestions = 10;
   const [score, setScore] = useState({ frontScore: 0, backScore: 0 });
   const progress = (curQuestionIndex / totalQuestions) * 100;
+  const curQuestion = entireQuestion[curQuestionIndex - 1];
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -32,29 +32,6 @@ export default function QuestionPage() {
         console.error("Error fetching data : ", error);
       });
   }, []);
-
-  // useEffect(() => {
-  //   fetch("src/data/dummy-data_question.json")
-  //     .then((res) => {
-  //       if (!res.ok) {
-  //         throw new Error(`HTTP error! Status: ${res.status}`);
-  //       }
-  //       return res.json();
-  //     })
-  //     .then((data) => {
-  //       setEntireQuestion(data);
-  //     })
-  //     .catch((error) => {
-  //       console.log("Error fetching data: ", error);
-  //     });
-  // }, []);
-
-  useEffect(() => {
-    const foundQuestion = entireQuestion.find(
-      (question) => question.question_ID === curQuestionIndex
-    );
-    setCurQuestion(foundQuestion);
-  }, [curQuestionIndex, entireQuestion]);
 
   const handleNextBtn = () => {
     if (curQuestionIndex < totalQuestions) {
@@ -82,6 +59,10 @@ export default function QuestionPage() {
     console.log("성공적으로 데이터가 서버에 보내짐");
   };
 
+  if (entireQuestion.length === 0) {
+    return <p>Loading...</p>;
+  }
+
   return (
     <PageContainer>
       <PageStyle>
@@ -90,10 +71,7 @@ export default function QuestionPage() {
           curIndex={curQuestionIndex}
           totalIndex={totalQuestions}
         />
-        <Question
-          questionNum={curQuestion?.question_ID}
-          text={curQuestion?.question_Sentence}
-        />
+        <Question question={curQuestion} />
         <AnswerBtn
           items={curQuestion?.answers}
           onClickFunction={handleAnswer}

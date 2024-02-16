@@ -25,6 +25,7 @@ export default function ResultPage() {
       })
       .then((data) => {
         setResult(data[0]);
+        console.log(data[0]);
       })
       .catch((error) => {
         console.error("Error fetching data : ", error);
