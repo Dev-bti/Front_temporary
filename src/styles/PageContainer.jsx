@@ -6,7 +6,10 @@ const PageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f0f0f0;
+  background-color: pink;
+
+  ${(props) => props.startPage && `overflow: hidden;`}
+  ${(props) => props.resultPage && `overflow: scroll;`}
 `;
 
 export default PageContainer;

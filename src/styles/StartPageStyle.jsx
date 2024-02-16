@@ -3,34 +3,31 @@ import { Link } from "react-router-dom";
 
 export const Jaeseung = styled.img`
   position: absolute;
-  top: -35%;
-  left: -21%;
-  width: 460px;
-  height: 900px;
+  left: -2%;
+  width: 290px;
+  height: 360px;
   filter: blur(3px);
 
   @media (max-width: 400px) and (max-height: 700px) {
-    top: -35%;
-    left: -27%;
-    width: 400px;
-    height: 800px;
+    width: 250px;
+    height: 300px;
     filter: blur(3px);
   }
 `;
 
 export const Joohyun = styled.img`
   position: absolute;
-  top: 50%;
-  left: 23%;
-  width: 450px;
-  height: 500px;
+  top: 60%;
+  left: 35%;
+  width: 280px;
+  height: 320px;
   filter: blur(3px);
 
   @media (max-width: 400px) and (max-height: 700px) {
-    top: 43%;
-    left: 25%;
-    width: 400px;
-    height: 500px;
+    top: 58%;
+    left: 37%;
+    width: 250px;
+    height: 280px;
     filter: blur(3px);
   }
 `;
