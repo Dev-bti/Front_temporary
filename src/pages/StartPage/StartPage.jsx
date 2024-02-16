@@ -19,8 +19,8 @@ export default function StartPage() {
   };
 
   return (
-    <PageContainer startPage>
-      <PageStyle>
+    <PageContainer>
+      <PageStyle startPage>
         <Jaeseung src={image.jaeseung} alt="Jaeseung"></Jaeseung>
         <Joohyun src={image.joohyun} alt="Joohyun"></Joohyun>
         <MainTitle>

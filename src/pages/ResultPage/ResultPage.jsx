@@ -32,8 +32,8 @@ export default function ResultPage() {
   }, []);
 
   return (
-    <PageContainer resultPage>
-      <PageStyle>
+    <PageContainer>
+      <PageStyle resultPage>
         <ResultTitle
           adjective={result?.dev_Adjective}
           result={result?.dev_Type}
