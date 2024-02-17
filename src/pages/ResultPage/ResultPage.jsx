@@ -4,6 +4,7 @@ import PageStyle from "../../styles/PageStyle";
 import ResultTitle from "../../components/ResultTitle";
 import ResultText from "../../components/ResultText";
 import ResultBtn from "../../components/ResultBtn";
+import ResultDeveloper from "../../components/ResultDeveloper";
 import { useLocation } from "react-router-dom";
 
 export default function ResultPage() {
@@ -48,6 +49,7 @@ export default function ResultPage() {
           lectures={result?.dev_Lectures}
         />
         <ResultBtn path={path} />
+        <ResultDeveloper />
       </PageStyle>
     </PageContainer>
   );

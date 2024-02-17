@@ -6,6 +6,20 @@ export const Border = styled.div`
   background-color: #d6d6d6;
 `;
 
+export const P = styled.p`
+  font-size: 14px;
+  margin: 5px 0;
+`;
+
+export const SmallP = styled.p`
+  font-size: 13px;
+`;
+
+export const BigP = styled.p`
+  font-size: 16px;
+  margin-bottom: 10px;
+`;
+
 export const Span = styled.span`
   font-weight: bold;
   color: #37a5ad;
