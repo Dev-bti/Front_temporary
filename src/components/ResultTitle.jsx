@@ -32,13 +32,13 @@ const ResultTitle = ({ adjective, result, resultId }) => {
 
   switch (resultId) {
     case 0:
-      imgPath = "src/assets/result/fullstack.png";
+      imgPath = "./src/assets/result/fullstack.png";
       break;
     case 1:
-      imgPath = "src/assets/result/frontend.png";
+      imgPath = "./src/assets/result/frontend.png";
       break;
     case 2:
-      imgPath = "src/assets/result/backend.png";
+      imgPath = "./src/assets/result/backend.png";
       break;
     default:
       imgPath = "";

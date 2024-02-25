@@ -49,7 +49,7 @@ const ResultBtn = ({ path }) => {
         content: {
           title: "내 개발자 유형 알아보기!",
           description: "결과 확인하러 가기",
-          imageUrl: "src/assets/dev/dev_joohyun.png",
+          imageUrl: "./src/assets/dev/dev_joohyun.png",
           link: {
             mobileWebUrl: "http://localhost:5173" + path,
             webUrl: "http://localhost:5173" + path,

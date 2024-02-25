@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const QUESTION_IMAGE = {
-  signup_Image: "src/assets/question/question_login.png",
-  calculator_Image: "src/assets/question/question_calculator.png",
+  signup_Image: "./src/assets/question/question_login.png",
+  calculator_Image: "./src/assets/question/question_calculator.png",
 };
 
 const QuestionContainer = styled.div`

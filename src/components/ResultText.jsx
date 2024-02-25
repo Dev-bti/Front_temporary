@@ -18,19 +18,19 @@ const ResultContainer = styled.div`
 
 const resultImg = {
   fronts: [
-    "src/assets/lecture/lecture_1.png",
-    "src/assets/lecture/lecture_2.png",
-    "src/assets/lecture/lecture_3.png",
+    "./src/assets/lecture/lecture_1.png",
+    "./src/assets/lecture/lecture_2.png",
+    "./src/assets/lecture/lecture_3.png",
   ],
   backs: [
-    "src/assets/lecture/lecture_4.png",
-    "src/assets/lecture/lecture_5.png",
-    "src/assets/lecture/lecture_6.png",
+    "./src/assets/lecture/lecture_4.png",
+    "./src/assets/lecture/lecture_5.png",
+    "./src/assets/lecture/lecture_6.png",
   ],
   fulls: [
-    "src/assets/lecture/lecture_1.png",
-    "src/assets/lecture/lecture_6.png",
-    "src/assets/lecture/lecture_7.jpeg",
+    "./src/assets/lecture/lecture_1.png",
+    "./src/assets/lecture/lecture_6.png",
+    "./src/assets/lecture/lecture_7.jpeg",
   ],
 };
 
@@ -55,16 +55,16 @@ const LangDetail = ({ img }) => {
 const Langs = ({ type }) => {
   const firstLang =
     type == 0 || type == 1
-      ? "src/assets/recolang/html.png"
-      : "src/assets/recolang/c.png";
+      ? "./src/assets/recolang/html.png"
+      : "./src/assets/recolang/c.png";
   const secondLang =
     type == 0 || type == 2
-      ? "src/assets/recolang/java.png"
-      : "src/assets/recolang/css.png";
+      ? "./src/assets/recolang/java.png"
+      : "./src/assets/recolang/css.png";
   const thirdLang =
     type == 0 || type == 1
-      ? "src/assets/recolang/javascript.png"
-      : "src/assets/recolang/python.png";
+      ? "./src/assets/recolang/javascript.png"
+      : "./src/assets/recolang/python.png";
   return (
     <LangsContainer>
       <LangDetail img={firstLang} />

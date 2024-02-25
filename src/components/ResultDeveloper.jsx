@@ -30,7 +30,7 @@ export default ResultDeveloper;
 
 // Devloper information
 const Jaeseung = {
-  img: "src/assets/dev/dev_jaeseung.png",
+  img: "./src/assets/dev/dev_jaeseung.png",
   name: "김재승",
   field: "백엔드",
   major: "컴퓨터공학과 19",
@@ -40,7 +40,7 @@ const Jaeseung = {
   insta_link: "https://www.instagram.com/jaessssskkk/",
 };
 const Joohyun = {
-  img: "src/assets/dev/dev_joohyun.png",
+  img: "./src/assets/dev/dev_joohyun.png",
   name: "최주현",
   field: "프론트엔드",
   major: "컴퓨터공학과 20",
@@ -99,13 +99,13 @@ const Developer = ({ developer }) => {
         {developer.major} {developer.name}
       </BigP>
       <IconContainer>
-        <IconImg src="src/assets/dev/dev_github.png" />
+        <IconImg src="./src/assets/dev/dev_github.png" />
         <Link to={developer.github_link}>
           <SmallP>{developer.github}</SmallP>
         </Link>
       </IconContainer>
       <IconContainer>
-        <IconImg src="src/assets/dev/dev_instagram.png" />
+        <IconImg src="./src/assets/dev/dev_instagram.png" />
         <Link to={developer.insta_link}>
           <SmallP>{developer.insta}</SmallP>
         </Link>
