@@ -17,7 +17,7 @@ export default function ResultPage() {
   const path = `/result?frontScore=${frontScore}&backScore=${backScore}`;
 
   useEffect(() => {
-    fetch("http://3.34.97.84:8080" + path, { method: "GET" })
+    fetch("http://3.37.128.95:8080" + path, { method: "GET" })
       .then((res) => {
         if (!res.ok) {
           throw new Error("HTTP error! Status: ${res.status}");

@@ -14,8 +14,8 @@ import {
 
 export default function StartPage() {
   const image = {
-    jaeseung: "src/assets/dev/dev_jaeseung.png",
-    joohyun: "src/assets/dev/dev_joohyun.png",
+    jaeseung: "./src/assets/dev/dev_jaeseung.png",
+    joohyun: "./src/assets/dev/dev_joohyun.png",
   };
 
   return (
