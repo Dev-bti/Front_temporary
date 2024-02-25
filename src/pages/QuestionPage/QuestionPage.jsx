@@ -18,7 +18,7 @@ export default function QuestionPage() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://3.37.128.95:8080/question", { method: "GET" })
+    fetch("https://devbtibackend.store/question", { method: "GET" })
       .then((res) => {
         if (!res.ok) {
           throw new Error(`HTTP error! Status: ${res.status}`);
