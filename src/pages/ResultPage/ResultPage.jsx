@@ -17,7 +17,7 @@ export default function ResultPage() {
   const path = `/result?frontScore=${frontScore}&backScore=${backScore}`;
 
   useEffect(() => {
-    fetch("https://devbtibackend.store/" + path, { method: "GET" })
+    fetch("https://devbtibackend.store" + path, { method: "GET" })
       .then((res) => {
         if (!res.ok) {
           throw new Error("HTTP error! Status: ${res.status}");
