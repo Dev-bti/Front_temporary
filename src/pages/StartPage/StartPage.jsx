@@ -11,11 +11,13 @@ import {
   Button,
   StyledLink,
 } from "../../styles/StartPageStyle";
+import JaeseungImg from "./src/assets/dev/dev_jaeseung.png";
+import JoohyunImg from "./src/assets/dev/dev_joohyun.png";
 
 export default function StartPage() {
   const image = {
-    jaeseung: "./src/assets/dev/dev_jaeseung.png",
-    joohyun: "./src/assets/dev/dev_joohyun.png",
+    jaeseung: JaeseungImg,
+    joohyun: JoohyunImg,
   };
 
   return (
