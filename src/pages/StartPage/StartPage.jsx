@@ -11,20 +11,14 @@ import {
   Button,
   StyledLink,
 } from "../../styles/StartPageStyle";
-import JaeseungImg from "../../assets/dev/dev_jaeseung.png";
-import JoohyunImg from "../../assets/dev/dev_joohyun.png";
+import { IMGTABLE } from "../../utility/img";
 
 export default function StartPage() {
-  const image = {
-    jaeseung: JaeseungImg,
-    joohyun: JoohyunImg,
-  };
-
   return (
     <PageContainer>
       <PageStyle startPage>
-        <Jaeseung src={image.jaeseung} alt="Jaeseung"></Jaeseung>
-        <Joohyun src={image.joohyun} alt="Joohyun"></Joohyun>
+        <Jaeseung src={IMGTABLE.dev.jaeseung} alt="Jaeseung"></Jaeseung>
+        <Joohyun src={IMGTABLE.dev.joohyun} alt="Joohyun"></Joohyun>
         <MainTitle>
           <Title>
             나의 <TitleSpan>Dev</TitleSpan>-BTI
