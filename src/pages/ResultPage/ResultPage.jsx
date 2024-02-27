@@ -33,6 +33,10 @@ export default function ResultPage() {
       });
   }, []);
 
+  if (result === null) {
+    return <h2>결과 로딩중입니다..</h2>;
+  }
+
   return (
     <PageContainer>
       <PageStyle resultPage>

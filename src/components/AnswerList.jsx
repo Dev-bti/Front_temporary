@@ -9,7 +9,7 @@ const AnswerContainer = styled.div`
   flex-direction: column;
 `;
 
-const AnswerList = styled.button`
+const AnswerListItem = styled.button`
   width: 100%;
   height: 38px;
   background-color: #c7e1e1;
@@ -30,26 +30,42 @@ const AnswerList = styled.button`
     color: #fff;
   }
 
-  &:focus {
+  &.selected {
     background-color: #4c8181;
     color: #fff;
   }
 `;
 
-const AnswerBtn = ({ items, onClickFunction }) => {
+const AnswerList = ({ items, handleAnswerSelect, currentAnswerType }) => {
   return (
     <AnswerContainer>
       {items &&
         items.map((item) => (
-          <AnswerList
+          <AnswerListItem
+            className={
+              currentAnswerType === identifyAnswerType(item) ? "selected" : ""
+            }
             key={item.answer_ID}
-            onClick={() => onClickFunction(item.answer_Front, item.answer_Back)}
+            onClick={() => handleAnswerSelect(identifyAnswerType(item))}
           >
             {item.answer_Sentence}
-          </AnswerList>
+          </AnswerListItem>
         ))}
     </AnswerContainer>
   );
 };
 
-export default AnswerBtn;
+const identifyAnswerType = (item) => {
+  const { answer_Front } = item;
+
+  switch (answer_Front) {
+    case 10:
+      return "front";
+    case 5:
+      return "full";
+    case 0:
+      return "back";
+  }
+};
+
+export default AnswerList;

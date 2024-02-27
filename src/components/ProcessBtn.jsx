@@ -24,18 +24,16 @@ const Button = styled.button`
   }
 `;
 
-const ProcessBtn = ({ questionID, onClickFunction }) => {
-  const [handleNextBtn, handlePrevBtn, handleResultRedirect] = onClickFunction;
+const ProcessBtn = ({ questionID, functions }) => {
+  const [handleNextBtnClick, handlePrevBtnClick] = functions;
   return (
     <ButtonContainer>
       {2 <= questionID && questionID <= 10 && (
-        <Button onClick={handlePrevBtn}>이전 질문</Button>
+        <Button onClick={handlePrevBtnClick}>이전 질문</Button>
       )}
-      {1 <= questionID && questionID <= 9 ? (
-        <Button onClick={handleNextBtn}>다음 질문</Button>
-      ) : (
-        <Button onClick={handleResultRedirect}>결과 보기</Button>
-      )}
+      <Button onClick={handleNextBtnClick}>
+        {1 <= questionID && questionID <= 9 ? "다음 질문" : "결과 보기"}
+      </Button>
     </ButtonContainer>
   );
 };
