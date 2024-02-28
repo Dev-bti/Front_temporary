@@ -34,7 +34,7 @@ const QuestionText = styled.div`
   margin-top: 5px;
   text-align: center;
   line-height: 25px;
-  font-size: 15px;
+  font-size: 14px;
 `;
 
 const BorderLine = styled.div`

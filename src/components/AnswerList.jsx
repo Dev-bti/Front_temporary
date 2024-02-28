@@ -19,7 +19,7 @@ const AnswerListItem = styled.button`
   padding-right: 10px;
   text-align: center;
   line-height: 38px;
-  font-size: 14px;
+  font-size: 13px;
   color: #252525;
   border: none;
   cursor: pointer;
