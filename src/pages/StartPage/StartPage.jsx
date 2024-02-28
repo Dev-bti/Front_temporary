@@ -11,7 +11,7 @@ import {
   Button,
   StyledLink,
 } from "../../styles/StartPageStyle";
-import { IMGTABLE } from "../../utility/img";
+import { IMGTABLE } from "../../util/img";
 
 export default function StartPage() {
   return (

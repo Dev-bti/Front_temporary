@@ -9,7 +9,7 @@ import {
   Lang,
   Lecture,
 } from "../styles/ResultPageStyle";
-import { IMGTABLE } from "../utility/img";
+import { IMGTABLE } from "../util/img";
 
 const ResultContainer = styled.div`
   margin-top: 25px;

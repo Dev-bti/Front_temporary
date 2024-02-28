@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { IMGTABLE } from "../utility/img";
+import { IMGTABLE } from "../util/img";
 
 const TitleBox = styled.div`
   width: 100%;

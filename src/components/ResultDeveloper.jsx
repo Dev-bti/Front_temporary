@@ -9,7 +9,7 @@ import {
   SmallP,
   BigP,
 } from "../styles/ResultPageStyle";
-import { IMGTABLE } from "../utility/img.js";
+import { IMGTABLE } from "../util/img.js";
 
 const ResultDeveloper = () => {
   return (
