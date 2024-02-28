@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import { IMGTABLE } from "../utility/img.js";
 
 const QUESTION_IMAGE = {
-  signup_Image: "./src/assets/question/question_login.png",
-  calculator_Image: "./src/assets/question/question_calculator.png",
+  signup_Image: IMGTABLE.question.login,
+  calculator_Image: IMGTABLE.question.calculator,
 };
 
 const QuestionContainer = styled.div`

@@ -9,6 +9,7 @@ import {
   Lang,
   Lecture,
 } from "../styles/ResultPageStyle";
+import { IMGTABLE } from "../utility/img";
 
 const ResultContainer = styled.div`
   margin-top: 25px;
@@ -18,19 +19,19 @@ const ResultContainer = styled.div`
 
 const resultImg = {
   fronts: [
-    "./src/assets/lecture/lecture_1.png",
-    "./src/assets/lecture/lecture_2.png",
-    "./src/assets/lecture/lecture_3.png",
+    IMGTABLE.lecture.lecture1,
+    IMGTABLE.lecture.lecture2,
+    IMGTABLE.lecture.lecture3,
   ],
   backs: [
-    "./src/assets/lecture/lecture_4.png",
-    "./src/assets/lecture/lecture_5.png",
-    "./src/assets/lecture/lecture_6.png",
+    IMGTABLE.lecture.lecture4,
+    IMGTABLE.lecture.lecture5,
+    IMGTABLE.lecture.lecture6,
   ],
   fulls: [
-    "./src/assets/lecture/lecture_1.png",
-    "./src/assets/lecture/lecture_6.png",
-    "./src/assets/lecture/lecture_7.jpeg",
+    IMGTABLE.lecture.lecture1,
+    IMGTABLE.lecture.lecture6,
+    IMGTABLE.lecture.lecture7,
   ],
 };
 
@@ -54,17 +55,13 @@ const LangDetail = ({ img }) => {
 };
 const Langs = ({ type }) => {
   const firstLang =
-    type == 0 || type == 1
-      ? "./src/assets/recolang/html.png"
-      : "./src/assets/recolang/c.png";
+    type == 0 || type == 1 ? IMGTABLE.recolang.html : IMGTABLE.recolang.c;
   const secondLang =
-    type == 0 || type == 2
-      ? "./src/assets/recolang/java.png"
-      : "./src/assets/recolang/css.png";
+    type == 0 || type == 2 ? IMGTABLE.recolang.java : IMGTABLE.recolang.css;
   const thirdLang =
     type == 0 || type == 1
-      ? "./src/assets/recolang/javascript.png"
-      : "./src/assets/recolang/python.png";
+      ? IMGTABLE.recolang.javascript
+      : IMGTABLE.recolang.python;
   return (
     <LangsContainer>
       <LangDetail img={firstLang} />

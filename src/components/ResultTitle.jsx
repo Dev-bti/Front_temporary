@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { IMGTABLE } from "../utility/img";
 
 const TitleBox = styled.div`
   width: 100%;
@@ -32,13 +33,13 @@ const ResultTitle = ({ adjective, result, resultId }) => {
 
   switch (resultId) {
     case 0:
-      imgPath = "./src/assets/result/fullstack.png";
+      imgPath = IMGTABLE.result.fullstack;
       break;
     case 1:
-      imgPath = "./src/assets/result/frontend.png";
+      imgPath = IMGTABLE.result.frontend;
       break;
     case 2:
-      imgPath = "./src/assets/result/backend.png";
+      imgPath = IMGTABLE.result.backend;
       break;
     default:
       imgPath = "";
