@@ -106,19 +106,3 @@ export default function QuestionPage() {
     </PageContainer>
   );
 }
-
-/**
- 주현이의 생각
-
- 1. QuestionPage 컴포넌트 내부에 isClicked 상태(type: array)를 하나 만들고, 초깃값은 false(type: boolean)
- 2. AnswerBtn들 중 버튼을 하나라도 클릭시 isClicked의 상태를 0에서 1로 변경 -> setIsClicked()를 사용
-  setIsClicked((prev) => !prev)
- 3. isClicked의 상태가 0 : handleNextBtn()함수가 실행되지 않도록
- 4. isClicked의 상태가 1 : handleNextBtn()함수가 정상적으로 실행
-
- 오빠의 생각
-
- 1. QuestionPage 컴포넌트 내부에 currentSelected 상태(type: array)를 하나 만들고, 초깃값은 null
- 2. 
-
- */
