@@ -51,8 +51,8 @@ const ResultBtn = ({ path }) => {
           description: "결과 확인하러 가기",
           imageUrl: "./src/assets/dev/dev_joohyun.png",
           link: {
-            mobileWebUrl: "http://localhost:5173" + path,
-            webUrl: "http://localhost:5173" + path,
+            mobileWebUrl: "https://devbti.netlify.app" + path,
+            webUrl: "https://devbti.netlify.app" + path,
           },
         },
       });
