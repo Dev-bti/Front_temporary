@@ -71,10 +71,16 @@ const PeopleContainer = styled.div`
   flex-direction: column;
   align-items: center;
 `;
-
-const Img = styled.img`
+const ImgContainer = styled.div`
+  padding: 10px;
   width: 80%;
   height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+const Img = styled.img`
+  width: 100%;
   margin-bottom: 10px;
 `;
 const IconImg = styled.img`
@@ -92,7 +98,9 @@ const IconContainer = styled.div`
 const Developer = ({ developer }) => {
   return (
     <PeopleContainer>
-      <Img src={developer.img} />
+      <ImgContainer>
+        <Img src={developer.img} />
+      </ImgContainer>
       <P>
         <Span>{developer.field}</Span> 개발
       </P>

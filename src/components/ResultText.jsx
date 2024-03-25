@@ -125,7 +125,7 @@ const ResultText = ({ type, resultId, works, personalities, lectures }) => {
       <Ul>
         {works &&
           works.map((work, index) => {
-            return <Li key={index}>{work}</Li>;
+            return <Li key={index}>💡 {work}</Li>;
           })}
       </Ul>
       <Border />
@@ -136,7 +136,7 @@ const ResultText = ({ type, resultId, works, personalities, lectures }) => {
       <Ul>
         {personalities &&
           personalities.map((personality, index) => {
-            return <Li key={index}>{personality}</Li>;
+            return <Li key={index}>➕ {personality}</Li>;
           })}
       </Ul>
       <Border />
