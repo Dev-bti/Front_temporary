@@ -35,6 +35,14 @@ const QuestionText = styled.div`
   text-align: center;
   line-height: 25px;
   font-size: 14px;
+  word-break: keep-all;
+
+  @media (max-width: 400px) {
+    font-size: 12px;
+  }
+  @media (max-width: 350px) {
+    font-size: 11px;
+  }
 `;
 
 const BorderLine = styled.div`

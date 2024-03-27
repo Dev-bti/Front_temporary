@@ -34,6 +34,13 @@ const AnswerListItem = styled.button`
     background-color: #4c8181;
     color: #fff;
   }
+
+  @media (max-width: 400px) {
+    font-size: 11px;
+  }
+  @media (max-width: 350px) {
+    font-size: 10px;
+  }
 `;
 
 const AnswerList = ({ items, handleAnswerSelect, currentAnswerType }) => {
