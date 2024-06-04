@@ -17,7 +17,7 @@ export default function ResultPage() {
   const path = `/result?frontScore=${frontScore}&backScore=${backScore}`;
 
   useEffect(() => {
-    fetch("https://devbtibackend.store" + path, { method: "GET" })
+    fetch("src/data/dummy-data_result.json")
       .then((res) => {
         if (!res.ok) {
           throw new Error("HTTP error! Status: ${res.status}");
@@ -25,8 +25,15 @@ export default function ResultPage() {
         return res.json();
       })
       .then((data) => {
-        setResult(data[0]);
-        console.log(data[0]);
+        if (frontScore >= backScore) {
+          if (frontScore - backScore <= 10) setResult(data[1]);
+          else setResult(data[0]);
+        } else {
+          if (backScore - frontScore <= 10) setResult(data[1]);
+          else setResult(data[2]);
+        }
+        // setResult(data[0]);
+        // console.log(data[0]);
       })
       .catch((error) => {
         console.error("Error fetching data : ", error);

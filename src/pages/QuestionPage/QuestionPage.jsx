@@ -20,7 +20,7 @@ export default function QuestionPage() {
   const currentAnswerType = answerTypeList[curQuestionIndex - 1];
 
   useEffect(() => {
-    fetch("https://devbtibackend.store/question", { method: "GET" })
+    fetch("src/data/dummy-data_question.json", { method: "GET" })
       .then((res) => {
         if (!res.ok) {
           throw new Error(`HTTP error! Status: ${res.status}`);
