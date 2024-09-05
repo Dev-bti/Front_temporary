@@ -32,8 +32,6 @@ export default function ResultPage() {
           if (backScore - frontScore <= 10) setResult(data[1]);
           else setResult(data[2]);
         }
-        // setResult(data[0]);
-        // console.log(data[0]);
       })
       .catch((error) => {
         console.error("Error fetching data : ", error);

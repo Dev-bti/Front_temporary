@@ -15,7 +15,6 @@ export default function QuestionPage() {
   const progress = (curQuestionIndex / totalQuestions) * 100;
   const curQuestion = entireQuestion[curQuestionIndex - 1];
   const navigate = useNavigate();
-  // currentSelected의 type은 null | 'front' | 'back' | 'full' -> default value: null
   const [answerTypeList, setAnswerTypeList] = useState(Array(10).fill(null));
   const currentAnswerType = answerTypeList[curQuestionIndex - 1];
 
@@ -71,8 +70,6 @@ export default function QuestionPage() {
     }
   };
 
-  // handleAnswerSelect()로 할 것인가, handleSelectAnswer()로 할 것인가
-  // : Answer가 Select 되었을 때의 처리 함수
   const handleAnswerSelect = (answerType) => {
     const newAnswerTypeList = [...answerTypeList];
     newAnswerTypeList[curQuestionIndex - 1] = answerType;
@@ -92,7 +89,6 @@ export default function QuestionPage() {
           totalIndex={totalQuestions}
         />
         <Question question={curQuestion} />
-        {/* feedback : <AnswerBtnContainer /> */}
         <AnswerList
           items={curQuestion?.answers}
           handleAnswerSelect={handleAnswerSelect}
